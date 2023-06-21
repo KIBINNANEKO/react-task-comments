@@ -8,4 +8,5 @@ If user typed something in the comment area and reloaded the  page, text must ap
 Design is just example (no need pixel perfect :))
 
 Example:
+
 ![Example](https://github.com/KIBINNANEKO/react-test-task-comments/raw/main/src/assets/template.png)
