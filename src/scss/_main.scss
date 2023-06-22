@@ -24,7 +24,7 @@ body {
 	}
 
 	.wrapped-block {
-		width: 450px;
+		@include adaptiv-value('width', 1000, 310, 1);
 		height: auto;
 		padding: 15vh 0 15vh 0;
 		position: absolute;
@@ -34,14 +34,27 @@ body {
 		left: 0;
 		margin: auto;
 
-		.block {
-			max-width: 100%;
-			height: auto;
-			display: block;
-			margin: 0 auto;
-			border: 1px solid rgba(155, 155, 155, 0.3);
-			border-radius: 5px;
+			.block {
+				max-width: 100%;
+				height: auto;
+				display: block;
+				margin: 0 auto;
+				border: 1px solid rgba(155, 155, 155, 0.3);
+				border-radius: 5px;
+			}
 		}
-	}
+
+		.comments-title{
+			@include adaptiv-value('font-size', 30, 15, 1);
+			@include adaptiv-value('padding', 20, 10, 1);
+			font-weight: 600;
+			letter-spacing: 1px;
+
+			span{
+				font-weight: 300;
+			}
+		}
+
+
 	}
 

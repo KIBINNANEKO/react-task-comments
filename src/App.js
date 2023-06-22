@@ -4,7 +4,13 @@ import CommentsWindow from './components/CommentsWindow';
 function App() {
   return (
     <div className='wrapper main'>
-      <CommentsWindow/>
+      <div className="parent">
+        <div className="wrapped-block">
+          <div className="block">
+           <CommentsWindow/>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
