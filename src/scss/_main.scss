@@ -24,9 +24,10 @@ body {
 	}
 
 	.wrapped-block {
-		@include adaptiv-value('width', 1000, 310, 1);
+		@include adaptiv-value('width', 1000, 320, 1);
 		height: auto;
-		padding: 15vh 0 15vh 0;
+		margin-top: 15vh;
+		margin-bottom: 15vh;
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -45,13 +46,70 @@ body {
 		}
 
 		.comments-title{
-			@include adaptiv-value('font-size', 30, 15, 1);
+			@include adaptiv-value('font-size', 30, 18, 1);
 			@include adaptiv-value('padding', 20, 10, 1);
 			font-weight: 600;
 			letter-spacing: 1px;
+			border-bottom: 1px solid rgba(155, 155, 155, 0.3);
 
 			span{
 				font-weight: 300;
+			}
+		}
+		
+		.comment-item{
+			@include adaptiv-value('padding-left', 20, 10, 1);
+			@include adaptiv-value('padding-right', 20, 10, 1);
+			@include adaptiv-value('padding-top', 10, 8, 1);
+			@include adaptiv-value('padding-bottom', 10, 8, 1);
+			border-bottom: 1px solid rgba(155, 155, 155, 0.3);
+			width: 100%;
+			height: auto;
+			display: flex;
+
+
+			.comment-item__avatar-block{
+				@include adaptiv-value('margin-right', 16, 12, 1);
+				align-self: center;
+				.comment-item__avatar{
+					@include adaptiv-value('width', 100, 50, 1);
+					@include adaptiv-value('height', 100, 50, 1);
+					border-radius: 50%;
+					background-color: none;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					font-weight: bold;
+
+					.comment-item__avatar-text{
+						@include adaptiv-value('font-size', 50, 20, 1);
+					}
+				}
+			}
+
+			.comment-item__body-block{
+				.comment-item__nickname{
+					@include adaptiv-value('font-size', 20, 15, 1);
+					@include adaptiv-value('padding-bottom', 10, 8, 1);
+					font-weight: 600;
+				}
+				.comment-item__comment{
+					@include adaptiv-value('font-size', 18, 14, 1);
+					@include adaptiv-value('padding-bottom', 10, 8, 1);
+				}
+				.comment-item__remove-button{
+					@include adaptiv-value('font-size', 16, 12, 1);
+					@include adaptiv-value('padding', 5, 3, 1);
+					border: 1px solid rgba(204, 0, 0, 0.6);
+					border-radius: 5px;
+					background: none;
+					transition: 0.2s;
+
+					&:hover{
+						background: rgba(204, 0, 0, 0.6);
+						color: white;
+					}
+				}
 			}
 		}
 

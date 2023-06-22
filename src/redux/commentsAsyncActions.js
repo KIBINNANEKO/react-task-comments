@@ -13,7 +13,7 @@ export const fetchComments = () => {
 		try{
 			dispatch(fetchCommentsAction())
 			axios.get('https://dummyjson.com/comments')
-			.then(res => dispatch(fetchCommentsAccess(res.comments)))
+			.then(res => dispatch(fetchCommentsAccess(res.data.comments)))
 		} catch{
 			dispatch(fetchCommentsError('Error loading data'))
 		}

@@ -104,7 +104,8 @@ html .wrapped-block,
 body .wrapped-block {
   width: 1000px;
   height: auto;
-  padding: 15vh 0 15vh 0;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
   position: absolute;
   top: 0;
   right: 0;
@@ -115,7 +116,7 @@ body .wrapped-block {
 @media (max-width: 1920px) {
   html .wrapped-block,
   body .wrapped-block {
-    width: calc(310px + 690 * ((100vw - 375px) / 1545));
+    width: calc(320px + 680 * ((100vw - 375px) / 1545));
   }
 }
 html .wrapped-block .block,
@@ -133,11 +134,12 @@ body .comments-title {
   padding: 20px;
   font-weight: 600;
   letter-spacing: 1px;
+  border-bottom: 1px solid rgba(155, 155, 155, 0.3);
 }
 @media (max-width: 1920px) {
   html .comments-title,
   body .comments-title {
-    font-size: calc(15px + 15 * ((100vw - 375px) / 1545));
+    font-size: calc(18px + 12 * ((100vw - 375px) / 1545));
   }
 }
 @media (max-width: 1920px) {
@@ -149,4 +151,144 @@ body .comments-title {
 html .comments-title span,
 body .comments-title span {
   font-weight: 300;
+}
+html .comment-item,
+body .comment-item {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(155, 155, 155, 0.3);
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+@media (max-width: 1920px) {
+  html .comment-item,
+  body .comment-item {
+    padding-left: calc(10px + 10 * ((100vw - 375px) / 1545));
+  }
+}
+@media (max-width: 1920px) {
+  html .comment-item,
+  body .comment-item {
+    padding-right: calc(10px + 10 * ((100vw - 375px) / 1545));
+  }
+}
+@media (max-width: 1920px) {
+  html .comment-item,
+  body .comment-item {
+    padding-top: calc(8px + 2 * ((100vw - 375px) / 1545));
+  }
+}
+@media (max-width: 1920px) {
+  html .comment-item,
+  body .comment-item {
+    padding-bottom: calc(8px + 2 * ((100vw - 375px) / 1545));
+  }
+}
+html .comment-item .comment-item__avatar-block,
+body .comment-item .comment-item__avatar-block {
+  margin-right: 16px;
+  align-self: center;
+}
+@media (max-width: 1920px) {
+  html .comment-item .comment-item__avatar-block,
+  body .comment-item .comment-item__avatar-block {
+    margin-right: calc(12px + 4 * ((100vw - 375px) / 1545));
+  }
+}
+html .comment-item .comment-item__avatar-block .comment-item__avatar,
+body .comment-item .comment-item__avatar-block .comment-item__avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+@media (max-width: 1920px) {
+  html .comment-item .comment-item__avatar-block .comment-item__avatar,
+  body .comment-item .comment-item__avatar-block .comment-item__avatar {
+    width: calc(50px + 50 * ((100vw - 375px) / 1545));
+  }
+}
+@media (max-width: 1920px) {
+  html .comment-item .comment-item__avatar-block .comment-item__avatar,
+  body .comment-item .comment-item__avatar-block .comment-item__avatar {
+    height: calc(50px + 50 * ((100vw - 375px) / 1545));
+  }
+}
+html .comment-item .comment-item__avatar-block .comment-item__avatar .comment-item__avatar-text,
+body .comment-item .comment-item__avatar-block .comment-item__avatar .comment-item__avatar-text {
+  font-size: 50px;
+}
+@media (max-width: 1920px) {
+  html .comment-item .comment-item__avatar-block .comment-item__avatar .comment-item__avatar-text,
+  body .comment-item .comment-item__avatar-block .comment-item__avatar .comment-item__avatar-text {
+    font-size: calc(20px + 30 * ((100vw - 375px) / 1545));
+  }
+}
+html .comment-item .comment-item__body-block .comment-item__nickname,
+body .comment-item .comment-item__body-block .comment-item__nickname {
+  font-size: 20px;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+@media (max-width: 1920px) {
+  html .comment-item .comment-item__body-block .comment-item__nickname,
+  body .comment-item .comment-item__body-block .comment-item__nickname {
+    font-size: calc(15px + 5 * ((100vw - 375px) / 1545));
+  }
+}
+@media (max-width: 1920px) {
+  html .comment-item .comment-item__body-block .comment-item__nickname,
+  body .comment-item .comment-item__body-block .comment-item__nickname {
+    padding-bottom: calc(8px + 2 * ((100vw - 375px) / 1545));
+  }
+}
+html .comment-item .comment-item__body-block .comment-item__comment,
+body .comment-item .comment-item__body-block .comment-item__comment {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+@media (max-width: 1920px) {
+  html .comment-item .comment-item__body-block .comment-item__comment,
+  body .comment-item .comment-item__body-block .comment-item__comment {
+    font-size: calc(14px + 4 * ((100vw - 375px) / 1545));
+  }
+}
+@media (max-width: 1920px) {
+  html .comment-item .comment-item__body-block .comment-item__comment,
+  body .comment-item .comment-item__body-block .comment-item__comment {
+    padding-bottom: calc(8px + 2 * ((100vw - 375px) / 1545));
+  }
+}
+html .comment-item .comment-item__body-block .comment-item__remove-button,
+body .comment-item .comment-item__body-block .comment-item__remove-button {
+  font-size: 16px;
+  padding: 5px;
+  border: 1px solid rgba(204, 0, 0, 0.6);
+  border-radius: 5px;
+  background: none;
+  transition: 0.2s;
+}
+@media (max-width: 1920px) {
+  html .comment-item .comment-item__body-block .comment-item__remove-button,
+  body .comment-item .comment-item__body-block .comment-item__remove-button {
+    font-size: calc(12px + 4 * ((100vw - 375px) / 1545));
+  }
+}
+@media (max-width: 1920px) {
+  html .comment-item .comment-item__body-block .comment-item__remove-button,
+  body .comment-item .comment-item__body-block .comment-item__remove-button {
+    padding: calc(3px + 2 * ((100vw - 375px) / 1545));
+  }
+}
+html .comment-item .comment-item__body-block .comment-item__remove-button:hover,
+body .comment-item .comment-item__body-block .comment-item__remove-button:hover {
+  background: rgba(204, 0, 0, 0.6);
+  color: white;
 }
