@@ -223,12 +223,12 @@ body .comment-item .comment-item__avatar-block .comment-item__avatar {
 }
 html .comment-item .comment-item__avatar-block .comment-item__avatar .comment-item__avatar-text,
 body .comment-item .comment-item__avatar-block .comment-item__avatar .comment-item__avatar-text {
-  font-size: 50px;
+  font-size: 40px;
 }
 @media (max-width: 1920px) {
   html .comment-item .comment-item__avatar-block .comment-item__avatar .comment-item__avatar-text,
   body .comment-item .comment-item__avatar-block .comment-item__avatar .comment-item__avatar-text {
-    font-size: calc(20px + 30 * ((100vw - 375px) / 1545));
+    font-size: calc(20px + 20 * ((100vw - 375px) / 1545));
   }
 }
 html .comment-item .comment-item__body-block .comment-item__nickname,

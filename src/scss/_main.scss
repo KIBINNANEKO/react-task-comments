@@ -82,7 +82,7 @@ body {
 					font-weight: bold;
 
 					.comment-item__avatar-text{
-						@include adaptiv-value('font-size', 50, 20, 1);
+						@include adaptiv-value('font-size', 40, 20, 1);
 					}
 				}
 			}
