@@ -21,5 +21,7 @@ export const commentsReducer = (state = defaultState, action) => {
 			const itemId = action.payload
 			const updatedItems = state.comments.filter(item => item.id !== itemId)
 			return { ...state, comments: updatedItems }
+		default:
+			return {...defaultState}
 	}
 }

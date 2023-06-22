@@ -1,8 +1,8 @@
 import axios from 'axios'
 
-const FETCH_COMMENTS_ACTION = "FETCH_COMMENTS_ACTION"
-const FETCH_COMMENTS_ACCESS = "FETCH_COMMENTS_ACCESS"
-const FETCH_COMMENTS_ERROR = "FETCH_COMMENTS_ERROR"
+export const FETCH_COMMENTS_ACTION = "FETCH_COMMENTS_ACTION"
+export const FETCH_COMMENTS_ACCESS = "FETCH_COMMENTS_ACCESS"
+export const FETCH_COMMENTS_ERROR = "FETCH_COMMENTS_ERROR"
 
 export const fetchCommentsAction = () => ({ type: FETCH_COMMENTS_ACTION})
 export const fetchCommentsAccess = (comments) => ({ type: FETCH_COMMENTS_ACCESS, payload: comments })

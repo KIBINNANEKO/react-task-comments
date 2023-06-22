@@ -1,8 +1,9 @@
-import {createStore, combineReducers, applyMiddleware } from 'react-redux'
+import {createStore, combineReducers, applyMiddleware } from 'redux'
 import thunk from 'redux-thunk'
+import { commentsReducer } from './commentsReducer'
 
 const rootReducer = combineReducers({
-	comments: null
+	comments: commentsReducer
 })
 
 export const store = createStore(rootReducer, applyMiddleware(thunk))
