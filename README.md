@@ -17,4 +17,4 @@ Example:
 
 Demonstration:
 
-![Gif](https://github.com/KIBINNANEKO/react-test-task-comments/edit/main/src/assets/demonstration.gif)
+![Gif](https://github.com/KIBINNANEKO/react-test-task-comments/blob/main/src/assets/demonstration.gif)
