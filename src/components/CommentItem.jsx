@@ -16,10 +16,6 @@ function CommentItem(props){
 		setAvatarColor(generateRandomColor())
 	}, [])
 
-	function deleteComment(id){
-		dispatch(removeComment(id))
-	}
-
 	return(
 		<div className="comment-item">
 			<div className="comment-item__avatar-block">
@@ -30,7 +26,7 @@ function CommentItem(props){
 			<div className="comment-item__body-block">
 				<p className="comment-item__nickname">{user.username}</p>
 				<p className="comment-item__comment">{body}</p>
-				<button className="comment-item__remove-button" onClick={() => deleteComment(id)}>Delete</button>
+				<button className="comment-item__remove-button" onClick={() => dispatch(removeComment(id))}>Delete</button>
 			</div>
 		</div>
 	)

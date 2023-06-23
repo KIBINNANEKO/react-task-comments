@@ -33,7 +33,9 @@ function CommentForm(){
 
 	useEffect(() => {
 		const data = localStorage.getItem('comment')
-		setComment(data)
+		if (typeof data === "string"){
+			setComment(data)
+		}
 		setAvatarColor(generateRandomColor())
 	}, [])
 
