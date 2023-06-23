@@ -26,8 +26,8 @@ function CommentForm(){
 		else{
 			ref.current.style.border = '1px solid rgba(155, 155, 155, 0.3)'
 			dispatch(addComment({ body: comment, id: uuidv4(), user: { id: 'anonim', username: 'anonim' } }))
+			localStorage.removeItem('comment')
 			setComment("")
-			localStorage.setItem('comment', '')
 		}
 	}
 
