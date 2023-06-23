@@ -14,7 +14,7 @@ function CommentsWindow(){
 		error: state.comments.error
 	}))
 
-	const [length, setLength] = useState(null)
+	const [length, setLength] = useState(0)
 
 	useEffect(() => {
 		dispatch(fetchComments())
