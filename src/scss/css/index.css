@@ -189,6 +189,7 @@ body .comment-item {
 }
 html .comment-item .comment-item__avatar-block,
 body .comment-item .comment-item__avatar-block {
+  flex: 0 1 10%;
   margin-right: 16px;
   align-self: center;
 }
@@ -230,6 +231,10 @@ body .comment-item .comment-item__avatar-block .comment-item__avatar .comment-it
   body .comment-item .comment-item__avatar-block .comment-item__avatar .comment-item__avatar-text {
     font-size: calc(20px + 20 * ((100vw - 375px) / 1545));
   }
+}
+html .comment-item .comment-item__body-block,
+body .comment-item .comment-item__body-block {
+  flex: 0 1 90%;
 }
 html .comment-item .comment-item__body-block .comment-item__nickname,
 body .comment-item .comment-item__body-block .comment-item__nickname {
@@ -291,4 +296,58 @@ html .comment-item .comment-item__body-block .comment-item__remove-button:hover,
 body .comment-item .comment-item__body-block .comment-item__remove-button:hover {
   background: rgba(204, 0, 0, 0.6);
   color: white;
+}
+html .comment-item .comment-item__body-block .comment-item__add-button,
+body .comment-item .comment-item__body-block .comment-item__add-button {
+  font-size: 16px;
+  padding: 5px;
+  margin-top: 7px;
+  border: 1px solid rgba(14, 165, 0, 0.6);
+  border-radius: 5px;
+  background: none;
+  transition: 0.2s;
+}
+@media (max-width: 1920px) {
+  html .comment-item .comment-item__body-block .comment-item__add-button,
+  body .comment-item .comment-item__body-block .comment-item__add-button {
+    font-size: calc(12px + 4 * ((100vw - 375px) / 1545));
+  }
+}
+@media (max-width: 1920px) {
+  html .comment-item .comment-item__body-block .comment-item__add-button,
+  body .comment-item .comment-item__body-block .comment-item__add-button {
+    padding: calc(3px + 2 * ((100vw - 375px) / 1545));
+  }
+}
+@media (max-width: 1920px) {
+  html .comment-item .comment-item__body-block .comment-item__add-button,
+  body .comment-item .comment-item__body-block .comment-item__add-button {
+    margin-top: calc(5px + 2 * ((100vw - 375px) / 1545));
+  }
+}
+html .comment-item .comment-item__body-block .comment-item__add-button:hover,
+body .comment-item .comment-item__body-block .comment-item__add-button:hover {
+  background: rgba(14, 165, 0, 0.6);
+  color: white;
+}
+html .comment-item .comment-item__body-block textarea,
+body .comment-item .comment-item__body-block textarea {
+  padding: 8px;
+  font-size: 18px;
+  resize: none;
+  border: 1px solid rgba(155, 155, 155, 0.3);
+  border-radius: 6px;
+  width: 100%;
+}
+@media (max-width: 1920px) {
+  html .comment-item .comment-item__body-block textarea,
+  body .comment-item .comment-item__body-block textarea {
+    padding: calc(5px + 3 * ((100vw - 375px) / 1545));
+  }
+}
+@media (max-width: 1920px) {
+  html .comment-item .comment-item__body-block textarea,
+  body .comment-item .comment-item__body-block textarea {
+    font-size: calc(14px + 4 * ((100vw - 375px) / 1545));
+  }
 }

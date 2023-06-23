@@ -16,7 +16,7 @@ export const commentsReducer = (state = defaultState, action) => {
 		case FETCH_COMMENTS_ERROR:
 			return { ...state, isLoading: false }
 		case ADD_COMMENT:
-			return { ...state, comments: [...state.comments, action.payload] }
+			return { ...state, comments: [action.payload, ...state.comments ] }
 		case REMOVE_COMMENT:
 			const itemId = action.payload
 			const updatedItems = state.comments.filter(item => item.id !== itemId)

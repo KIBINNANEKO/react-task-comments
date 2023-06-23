@@ -67,8 +67,8 @@ body {
 			height: auto;
 			display: flex;
 
-
 			.comment-item__avatar-block{
+				flex: 0 1 10%;
 				@include adaptiv-value('margin-right', 16, 12, 1);
 				align-self: center;
 				.comment-item__avatar{
@@ -88,6 +88,8 @@ body {
 			}
 
 			.comment-item__body-block{
+				flex: 0 1 90%;
+
 				.comment-item__nickname{
 					@include adaptiv-value('font-size', 20, 15, 1);
 					@include adaptiv-value('padding-bottom', 10, 8, 1);
@@ -109,6 +111,30 @@ body {
 						background: rgba(204, 0, 0, 0.6);
 						color: white;
 					}
+				}
+
+				.comment-item__add-button {
+					@include adaptiv-value('font-size', 16, 12, 1);
+					@include adaptiv-value('padding', 5, 3, 1);
+					@include adaptiv-value('margin-top', 7, 5, 1);
+					border: 1px solid rgba(14, 165, 0, 0.6);
+					border-radius: 5px;
+					background: none;
+					transition: 0.2s;
+
+					&:hover {
+						background: rgba(14, 165, 0, 0.6);
+						color: white;
+					}
+				}
+
+				textarea{
+					@include adaptiv-value('padding', 8, 5, 1);
+					@include adaptiv-value('font-size', 18, 14, 1);
+					resize: none;
+					border: 1px solid rgba(155, 155, 155, 0.3);
+					border-radius: 6px;
+					width: 100%;
 				}
 			}
 		}

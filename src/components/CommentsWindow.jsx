@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { fetchComments } from "../redux/commentsAsyncActions"
 import CommentItem from "./CommentItem"
+import CommentForm from "./CommentForm"
 
 function CommentsWindow(){
 
@@ -13,14 +14,21 @@ function CommentsWindow(){
 		error: state.comments.error
 	}))
 
+	const [length, setLength] = useState(null)
+
 	useEffect(() => {
 		dispatch(fetchComments())
 	}, [])
 
+	useEffect(()=> {
+		setLength(comments?.length)
+	}, [comments])
+
 
 	return(
 		<>
-			<p className="comments-title">Comments <span>({0})</span></p>
+			<p className="comments-title">Comments <span>({length})</span></p>
+			<CommentForm/>
 			<div className="comments-window">
 				{ comments?.map(item => (
 					<CommentItem key={item.id} {...item}></CommentItem>
