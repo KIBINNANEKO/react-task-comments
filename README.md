@@ -11,6 +11,12 @@ Write a web application that will request other people's comments via the API, a
 3. If user typed something in the comment area and reloaded the  page, text must appears in the <textarea> (save into local storage)  
 4. Design is just example (no need pixel perfect :))
 
+Technology stack:
+- HTML, SCSS
+- JS
+- React
+- Redux + Redux Thunk
+
 Example:
 
 ![Example](https://github.com/KIBINNANEKO/react-test-task-comments/raw/main/src/assets/template.png)
