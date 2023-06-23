@@ -1,4 +1,4 @@
-# Test Task #1: Comments
+t# Test Task #1: Comments
 
 Disclaimer: Test tasks are made and exhibited as part of the portfolio solely for practice and demonstration of skills, and not for distribution of ready-made solutions. The names of the companies that provide them, I do not indicate.
 
@@ -17,4 +17,4 @@ Example:
 
 Demonstration:
 
-![Gif](https://github.com/KIBINNANEKO/react-test-task-comments/raw/main/src/assets/demonstration.gif)
+![Gif](https://github.com/KIBINNANEKO/react-test-task-comments/edit/main/src/assets/demonstration.gif)
