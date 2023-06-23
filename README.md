@@ -21,6 +21,12 @@ Example:
 
 ![Example](https://github.com/KIBINNANEKO/react-test-task-comments/raw/main/src/assets/template.png)
 
+What I would improve in a real project:
+- Would add a loading skeleton
+- Better comment text validation
+- More animations
+- Static or dynamic pagination for loading comments
+
 Demonstration:
 
 ![Gif](https://github.com/KIBINNANEKO/react-test-task-comments/blob/main/src/assets/demonstration.gif)
