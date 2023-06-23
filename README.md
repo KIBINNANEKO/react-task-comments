@@ -14,3 +14,7 @@ Write a web application that will request other people's comments via the API, a
 Example:
 
 ![Example](https://github.com/KIBINNANEKO/react-test-task-comments/raw/main/src/assets/template.png)
+
+Demonstration:
+
+![Gif](https://github.com/KIBINNANEKO/react-test-task-comments/raw/main/src/assets/demonstration.gif)
