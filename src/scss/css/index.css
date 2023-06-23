@@ -128,8 +128,8 @@ body .wrapped-block .block {
   border: 1px solid rgba(155, 155, 155, 0.3);
   border-radius: 5px;
 }
-html .comments-title,
-body .comments-title {
+
+.comments-title {
   font-size: 30px;
   padding: 20px;
   font-weight: 600;
@@ -137,23 +137,20 @@ body .comments-title {
   border-bottom: 1px solid rgba(155, 155, 155, 0.3);
 }
 @media (max-width: 1920px) {
-  html .comments-title,
-  body .comments-title {
+  .comments-title {
     font-size: calc(18px + 12 * ((100vw - 375px) / 1545));
   }
 }
 @media (max-width: 1920px) {
-  html .comments-title,
-  body .comments-title {
+  .comments-title {
     padding: calc(10px + 10 * ((100vw - 375px) / 1545));
   }
 }
-html .comments-title span,
-body .comments-title span {
+.comments-title span {
   font-weight: 300;
 }
-html .comment-item,
-body .comment-item {
+
+.comment-item {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
@@ -164,43 +161,36 @@ body .comment-item {
   display: flex;
 }
 @media (max-width: 1920px) {
-  html .comment-item,
-  body .comment-item {
+  .comment-item {
     padding-left: calc(10px + 10 * ((100vw - 375px) / 1545));
   }
 }
 @media (max-width: 1920px) {
-  html .comment-item,
-  body .comment-item {
+  .comment-item {
     padding-right: calc(10px + 10 * ((100vw - 375px) / 1545));
   }
 }
 @media (max-width: 1920px) {
-  html .comment-item,
-  body .comment-item {
+  .comment-item {
     padding-top: calc(8px + 2 * ((100vw - 375px) / 1545));
   }
 }
 @media (max-width: 1920px) {
-  html .comment-item,
-  body .comment-item {
+  .comment-item {
     padding-bottom: calc(8px + 2 * ((100vw - 375px) / 1545));
   }
 }
-html .comment-item .comment-item__avatar-block,
-body .comment-item .comment-item__avatar-block {
+.comment-item .comment-item__avatar-block {
   flex: 0 1 10%;
   margin-right: 16px;
   align-self: center;
 }
 @media (max-width: 1920px) {
-  html .comment-item .comment-item__avatar-block,
-  body .comment-item .comment-item__avatar-block {
+  .comment-item .comment-item__avatar-block {
     margin-right: calc(12px + 4 * ((100vw - 375px) / 1545));
   }
 }
-html .comment-item .comment-item__avatar-block .comment-item__avatar,
-body .comment-item .comment-item__avatar-block .comment-item__avatar {
+.comment-item .comment-item__avatar-block .comment-item__avatar {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -211,68 +201,56 @@ body .comment-item .comment-item__avatar-block .comment-item__avatar {
   font-weight: bold;
 }
 @media (max-width: 1920px) {
-  html .comment-item .comment-item__avatar-block .comment-item__avatar,
-  body .comment-item .comment-item__avatar-block .comment-item__avatar {
+  .comment-item .comment-item__avatar-block .comment-item__avatar {
     width: calc(50px + 50 * ((100vw - 375px) / 1545));
   }
 }
 @media (max-width: 1920px) {
-  html .comment-item .comment-item__avatar-block .comment-item__avatar,
-  body .comment-item .comment-item__avatar-block .comment-item__avatar {
+  .comment-item .comment-item__avatar-block .comment-item__avatar {
     height: calc(50px + 50 * ((100vw - 375px) / 1545));
   }
 }
-html .comment-item .comment-item__avatar-block .comment-item__avatar .comment-item__avatar-text,
-body .comment-item .comment-item__avatar-block .comment-item__avatar .comment-item__avatar-text {
+.comment-item .comment-item__avatar-block .comment-item__avatar .comment-item__avatar-text {
   font-size: 40px;
 }
 @media (max-width: 1920px) {
-  html .comment-item .comment-item__avatar-block .comment-item__avatar .comment-item__avatar-text,
-  body .comment-item .comment-item__avatar-block .comment-item__avatar .comment-item__avatar-text {
+  .comment-item .comment-item__avatar-block .comment-item__avatar .comment-item__avatar-text {
     font-size: calc(20px + 20 * ((100vw - 375px) / 1545));
   }
 }
-html .comment-item .comment-item__body-block,
-body .comment-item .comment-item__body-block {
+.comment-item .comment-item__body-block {
   flex: 0 1 90%;
 }
-html .comment-item .comment-item__body-block .comment-item__nickname,
-body .comment-item .comment-item__body-block .comment-item__nickname {
+.comment-item .comment-item__body-block .comment-item__nickname {
   font-size: 20px;
   padding-bottom: 10px;
   font-weight: 600;
 }
 @media (max-width: 1920px) {
-  html .comment-item .comment-item__body-block .comment-item__nickname,
-  body .comment-item .comment-item__body-block .comment-item__nickname {
+  .comment-item .comment-item__body-block .comment-item__nickname {
     font-size: calc(15px + 5 * ((100vw - 375px) / 1545));
   }
 }
 @media (max-width: 1920px) {
-  html .comment-item .comment-item__body-block .comment-item__nickname,
-  body .comment-item .comment-item__body-block .comment-item__nickname {
+  .comment-item .comment-item__body-block .comment-item__nickname {
     padding-bottom: calc(8px + 2 * ((100vw - 375px) / 1545));
   }
 }
-html .comment-item .comment-item__body-block .comment-item__comment,
-body .comment-item .comment-item__body-block .comment-item__comment {
+.comment-item .comment-item__body-block .comment-item__comment {
   font-size: 18px;
   padding-bottom: 10px;
 }
 @media (max-width: 1920px) {
-  html .comment-item .comment-item__body-block .comment-item__comment,
-  body .comment-item .comment-item__body-block .comment-item__comment {
+  .comment-item .comment-item__body-block .comment-item__comment {
     font-size: calc(14px + 4 * ((100vw - 375px) / 1545));
   }
 }
 @media (max-width: 1920px) {
-  html .comment-item .comment-item__body-block .comment-item__comment,
-  body .comment-item .comment-item__body-block .comment-item__comment {
+  .comment-item .comment-item__body-block .comment-item__comment {
     padding-bottom: calc(8px + 2 * ((100vw - 375px) / 1545));
   }
 }
-html .comment-item .comment-item__body-block .comment-item__remove-button,
-body .comment-item .comment-item__body-block .comment-item__remove-button {
+.comment-item .comment-item__body-block .comment-item__remove-button {
   font-size: 16px;
   padding: 5px;
   border: 1px solid rgba(204, 0, 0, 0.6);
@@ -281,24 +259,20 @@ body .comment-item .comment-item__body-block .comment-item__remove-button {
   transition: 0.2s;
 }
 @media (max-width: 1920px) {
-  html .comment-item .comment-item__body-block .comment-item__remove-button,
-  body .comment-item .comment-item__body-block .comment-item__remove-button {
+  .comment-item .comment-item__body-block .comment-item__remove-button {
     font-size: calc(12px + 4 * ((100vw - 375px) / 1545));
   }
 }
 @media (max-width: 1920px) {
-  html .comment-item .comment-item__body-block .comment-item__remove-button,
-  body .comment-item .comment-item__body-block .comment-item__remove-button {
+  .comment-item .comment-item__body-block .comment-item__remove-button {
     padding: calc(3px + 2 * ((100vw - 375px) / 1545));
   }
 }
-html .comment-item .comment-item__body-block .comment-item__remove-button:hover,
-body .comment-item .comment-item__body-block .comment-item__remove-button:hover {
+.comment-item .comment-item__body-block .comment-item__remove-button:hover {
   background: rgba(204, 0, 0, 0.6);
   color: white;
 }
-html .comment-item .comment-item__body-block .comment-item__add-button,
-body .comment-item .comment-item__body-block .comment-item__add-button {
+.comment-item .comment-item__body-block .comment-item__add-button {
   font-size: 16px;
   padding: 5px;
   margin-top: 7px;
@@ -308,30 +282,25 @@ body .comment-item .comment-item__body-block .comment-item__add-button {
   transition: 0.2s;
 }
 @media (max-width: 1920px) {
-  html .comment-item .comment-item__body-block .comment-item__add-button,
-  body .comment-item .comment-item__body-block .comment-item__add-button {
+  .comment-item .comment-item__body-block .comment-item__add-button {
     font-size: calc(12px + 4 * ((100vw - 375px) / 1545));
   }
 }
 @media (max-width: 1920px) {
-  html .comment-item .comment-item__body-block .comment-item__add-button,
-  body .comment-item .comment-item__body-block .comment-item__add-button {
+  .comment-item .comment-item__body-block .comment-item__add-button {
     padding: calc(3px + 2 * ((100vw - 375px) / 1545));
   }
 }
 @media (max-width: 1920px) {
-  html .comment-item .comment-item__body-block .comment-item__add-button,
-  body .comment-item .comment-item__body-block .comment-item__add-button {
+  .comment-item .comment-item__body-block .comment-item__add-button {
     margin-top: calc(5px + 2 * ((100vw - 375px) / 1545));
   }
 }
-html .comment-item .comment-item__body-block .comment-item__add-button:hover,
-body .comment-item .comment-item__body-block .comment-item__add-button:hover {
+.comment-item .comment-item__body-block .comment-item__add-button:hover {
   background: rgba(14, 165, 0, 0.6);
   color: white;
 }
-html .comment-item .comment-item__body-block textarea,
-body .comment-item .comment-item__body-block textarea {
+.comment-item .comment-item__body-block textarea {
   padding: 8px;
   font-size: 18px;
   resize: none;
@@ -340,14 +309,12 @@ body .comment-item .comment-item__body-block textarea {
   width: 100%;
 }
 @media (max-width: 1920px) {
-  html .comment-item .comment-item__body-block textarea,
-  body .comment-item .comment-item__body-block textarea {
+  .comment-item .comment-item__body-block textarea {
     padding: calc(5px + 3 * ((100vw - 375px) / 1545));
   }
 }
 @media (max-width: 1920px) {
-  html .comment-item .comment-item__body-block textarea,
-  body .comment-item .comment-item__body-block textarea {
+  .comment-item .comment-item__body-block textarea {
     font-size: calc(14px + 4 * ((100vw - 375px) / 1545));
   }
 }
