@@ -1,6 +1,4 @@
-t# Test Task #1: Comments
-
-Disclaimer: Test tasks are made and exhibited as part of the portfolio solely for practice and demonstration of skills, and not for distribution of ready-made solutions. The names of the companies that provide them, I do not indicate.
+Task #1: Comments
 
 Conditions of the problem:
 
